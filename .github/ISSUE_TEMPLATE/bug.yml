@@ -1,0 +1,30 @@
+name: Bug report
+description: Something is broken in the checkout API
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Put AB#<id> in the description if a Boards item already exists."
+  - type: input
+    id: boards-id
+    attributes:
+      label: Azure Boards work item
+      description: "Example: AB#12"
+      placeholder: "AB#"
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - 1 - Critical
+        - 2 - High
+        - 3 - Medium
+        - 4 - Low
+      default: 1

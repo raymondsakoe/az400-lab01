@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Azure Boards backlog
+    url: https://dev.azure.com/rsakoe
+    about: Planned work lives in Azure Boards; use AB#<id> to link.
